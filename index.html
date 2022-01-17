@@ -4,9 +4,50 @@
         <meta charset="UTF-8">
         <title>Library App</title>
         <link rel="stylesheet" href="styles.css">
-        <script src="script.js"></script>
+        <script src="script.js" defer></script>
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     </head>
     <body>
-        
+        <div id="wrap">
+            <div id="header">
+                <h1 class="header-footer-text">The Library</h1>
+            </div>
+            <button id="new-book-btn" onclick="openForm()">New Book</button>
+            <div id="new-book-form">
+                <div class="form-container">
+                    <h2>Enter New Book Information</h2>
+
+                    <label for="title">
+                      <strong>Title</strong>
+                    </label>
+                    <input type="text" id="book-title-input" placeholder="Book Title" name="title" required>
+
+                    <label for="author">
+                      <strong>Author</strong>
+                    </label>
+                    <input type="text" id="book-author-input" placeholder="Book Author" name="author" required>
+
+                    <label for="numPages">
+                        <strong>Number of Pages</strong>
+                    </label>
+                    <input type="text" id="book-num-pages-input" placeholder="Number of Pages" name="numPages" required>
+
+                    <label for="hasRead">
+                        <strong>Have you already read this book?</strong>
+                    </label>
+                    <input type="checkbox" id="book-has-read-input" placeholder="" name="hasRead">
+
+                    <button type="submit" id="submit-btn" class="btn" onclick="submitForm()">Add Book</button>
+                    <button type="button" id="cancel-btn" class="btn" onclick="closeForm()">Close</button>
+                </div>
+            </div>
+
+            <div id="bookshelf">
+                
+            </div>
+            <div id="footer">
+                <span class="header-footer-text">by Cullan Diffee</span>
+            </div>
+        </div>
     </body>
 </html>
