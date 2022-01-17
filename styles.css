@@ -57,7 +57,6 @@ body {
     border-radius: 12px;
 }
 
-
 .card {
     display: flex;
     flex-direction: column;
@@ -95,8 +94,3 @@ body {
     height: 50%;
     border-radius: 12px;
   }
-
-
-
-
-

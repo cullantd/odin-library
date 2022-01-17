@@ -85,7 +85,6 @@ function submitForm() {
 
 function toggleReadStatus(bookId) {
     const bookNodeToToggle = document.querySelector("[data-book-id='" + bookId + "']");
-    console.log("read status toggle! book title is: " + bookNodeToToggle);
     const textNodeToChange = bookNodeToToggle.querySelector('.book-has-read-node');
 
     if (myLibrary[bookId].hasRead === true) {
@@ -99,8 +98,8 @@ function toggleReadStatus(bookId) {
 
 //main
 const theHobbit = new Book("The Hobbit", "J.R.R. Tolkien", 295, false);
-addBookToLibrary(theHobbit); //example 3
+addBookToLibrary(theHobbit); //example 1
 const harryPotter = new Book ("Harry Potter", "JK Rowling", 450, false);
 addBookToLibrary(harryPotter); //example 2
 const it = new Book ("It", "Stephen King", 500, false);
-addBookToLibrary(it); //example 1
+addBookToLibrary(it); //example 3
